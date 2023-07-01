@@ -27,6 +27,8 @@ struct ProductsView: View {
             VStack {
                 HStack {
                     Button {
+                        viewModel.currentTeg = "Все меню"
+                        viewModel.filter(with: viewModel.currentTeg)
                         coordinator.pop()
                     } label: {
                         Image("back")
