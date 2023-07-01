@@ -41,8 +41,9 @@ struct ProductsView: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(.black)
                     Spacer()
-                    Image(systemName: "person.circle")
+                    Image("avatar")
                         .resizable()
+                        .clipShape(Circle())
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 44, height: 44)
                 }
